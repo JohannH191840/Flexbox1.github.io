@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    .Header{
+        display:flex;
+        width:100%;
+        background-color: yellowgreen;
+        height: 200px;
+    }
+
+
+    .Middle{
+        display: flex;
+        flex-direction: row;
+        font-size: 30px;
+        text-align: left;
+        margin: 0px;
+    }
+    
+    .Article{
+        padding:10px;
+        background-color: rgb(203, 137, 137);
+        height: 100vh;
+        width: 500px;
+       
+    }
+
+    .Aside{
+
+        padding:10px;
+        background-color: beige;
+        height: 100vh;
+        width: 500px;
+       
+        
+
+    }
+
+
+    .Nav{
+
+   
+        background-color: #D7E8D4;
+        height: 100vh;
+        width: 500px;
+        
+
+    }
+
+    .Footer{
+       width:100%;
+        background-color: yellowgreen;
+        height: 300px;
+        display:flex;
+    }
+
+    /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .Middle , .Footer, .Header{
+    flex-direction: column;
+
+  }
+  .Header, .Footer{
+    height:200px;
+  }
+}
+
+</style>
+
+
+
+
+</head>
+<body>
+
+    <div class="Header">
+
+        <div>Header</div>
+
+    </div>
+
+    <div class="Middle">
+
+        <div class="Article">Article</div>
+        <div class="Aside">Aside</div>
+        <div class="Nav">Nav</div>
+        
+
+    </div>
+
+    <div class="Footer">
+            <div>Footer</div>
+
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
